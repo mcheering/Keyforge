@@ -1,0 +1,12 @@
+:root {
+      --black: rgb(29, 29, 29);
+      --gray: rgb(58, 58, 58);
+}
+
+body {
+      background-color: var(--gray);
+}
+
+.navbar {
+      background-color: var(--black);
+}
