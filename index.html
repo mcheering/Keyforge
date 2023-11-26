@@ -16,13 +16,15 @@
 </head>
 
 <body>
+      <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                   <a class="navbar-brand" href="./index.html">
                         <img src="./images/logos/logo-no-background.svg" alt="Keyforge logo" height="35">
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -38,34 +40,186 @@
 
       <!-- Begin page content -->
       <main class="flex-shrink-0 h-100">
-            <div class="container">
-                  <h1 class="mt-5">Welcome to Keyforge!</h1>
-                  <p class="lead">Forge your very own custom mechanical keyboard. </p>
+            <div id="myCarousel" class="carousel slide mb-6 shadow-lg" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                              aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                              aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                              aria-label="Slide 5"></button>
+
+                  </div>
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                              <img src="./images/jumbotron/coffeeKeyboard.jpg" alt="coffee Keyboard">
+                              <div class="container">
+                                    <div class="carousel-caption text-start">
+                                          <h1>Keyboard don't have to be boring</h1>
+                                          <p class="opacity-75">They can be an expression of your passions, build your
+                                                own
+                                                custom keyboard
+                                          </p>
+                                          <p><a class="btn btn-lg btn-light" href="#custom">Custom Order</a>
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="./images/jumbotron/botanicalKeyboard.jpg" alt="botanical keyboard">
+                              <div class="container">
+                                    <div class="carousel-caption">
+                                          <h1>Bring nature to your desk</h1>
+                                          <p>Make your setup have a botanical theme, you can find other themes in our
+                                                store
+                                          </p>
+                                          <p><a class="btn btn-lg btn-light" href="#store">Store</a></p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="./images/jumbotron/pinkKeyboard.jpg" alt="pink keyboard">
+                              <div class="container">
+                                    <div class="carousel-caption">
+                                          <h1>On Wednesdays, we wear pink</h1>
+                                          <p>Custom keycaps can make your keyboard pop, check out this Daifuku set.</p>
+                                          <p><a class="btn btn-lg btn-light" href="#store">Store</a></p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="./images/jumbotron/purpleKeyboard.jpg" alt="purple keyboard">
+                              <div class="container">
+                                    <div class="carousel-caption text-end">
+                                          <h1>Any color you want</h1>
+                                          <p>Following our guides, you can build a keyboard in your favorite color.</p>
+                                          <p><a class="btn btn-lg btn-light" href="#guides">Learn More</a></p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="./images/jumbotron/switches.jpg" alt="switches">
+                              <div class="container">
+                                    <div class="carousel-caption text-end">
+                                          <h1>Switch up your setup</h1>
+                                          <p>Switches can give your typing a unique sound that makes work sound fun.
+                                                Checkout
+                                                all of our switches.</p>
+                                          <p><a class="btn btn-lg btn-light" href="#store">Store</a></p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+            <div class="about">
+                  <div class="card bg-transparent text-light shadow" style="width: 18rem;">
+                        <img src="./images/odin_r3/fullCase.jpg" class="card-img-top"
+                              alt="keyforge logo with black background">
+                        <div class="card-body">
+                              <h5 class="card-title">About</h5>
+                              <p class="card-text">Keyforge wants to help you with your keyboard dreams. Keyboards don't
+                                    have to be boring, they can
+                                    be fun and quirky, taking some of the mundane out of your day.</p>
+                              <a href="#learn" class="btn btn-primary">Learn More</a>
+                        </div>
+                  </div>
+
+                  <div id="guides" class="card bg-transparent text-light shadow" style="width: 18rem;">
+                        <img src="./images/tofu60/emptyCase.jpg" class="card-img-top" alt="tofu case that is empty">
+                        <div class="card-body">
+                              <h5 class="card-title">Guides</h5>
+                              <p class="card-text">Keyforge provides guides for the boards we sell. But we
+                                    also provide guides for modding your keyboard. You can modify the case,
+                                    PCB, and switches to give your keybaord a unique sound that is a
+                                    pleasure to hear while typing.</p>
+                              <a href="./guides.html" class="btn btn-primary">Guides</a>
+                        </div>
+                  </div>
+
+                  <div id="store" class="card bg-transparent text-light shadow" style="width: 18rem;">
+                        <img src="./images/tet/fullCase.jpg" class="card-img-top" alt="tet case that is full">
+                        <div class="card-body">
+                              <h5 class="card-title">Shop</h5>
+                              <p class="card-text">Checkout our online store for kits, switches, and
+                                    keycaps. You can modify an existing board you own with our selection of
+                                    parts, or order a kit throgh us for a new or your first custom
+                                    mechanical keybaord.</p>
+                              <a href="./store.html" class="btn btn-primary">Shop</a>
+                        </div>
+                  </div>
+
+                  <div id="custom" class="card bg-transparent text-light shadow" style="width: 18rem;">
+                        <img src="./images/tet/emptyCase.jpg" class="card-img-top" alt="tet case that is empty">
+                        <div class="card-body">
+                              <h5 class="card-title">Custom Orders</h5>
+                              <p class="card-text">Don't see what you're looking for in our store? Fill out
+                                    our custom order for and we'll work with you to source the parts, or
+                                    find something similar that will still give you the keybaord fo your
+                                    dreams.</p>
+                              <a href="./customOrders.html" class="btn btn-primary">Order</a>
+                        </div>
+                  </div>
+            </div>
+            <div id="learn" class="container-fluid text-light">
+                  <div class="row learnMore">
+                        <hr>
+                        <div class="col">
+                              <h2>Who we are</h2>
+                        </div>
+                        <div class="col">
+                              <p>We are a business that specializes in mechanical keyboards.We provide building
+                                    services, kits to build yourself, parts, and guides for building and modding your
+                                    keybaords.</p>
+                              </br>
+                              <p>Keyforge is a part of the mechanical keyboard community, we post on social media our
+                                    builds, and work with indpendent content creators to create unique boards that are
+                                    actually in stock</p>
+                              </br>
+                              <p>We do not proviude group buys, if we sell it, we stock it, and believe in the product,
+                                    so when you see something on our website, we work to keep it in stock. We don't like
+                                    the group-buy model because it leads to long wait times, and overall, it takes fun
+                                    away from the experience. </p>
+                        </div>
+
+                  </div>
             </div>
       </main>
-      
+
       <!--Fixed Footer -->
       <footer class=" footer mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="container w-75 p-3 d-flex">
                   <p class="col-md-4 mb-0 text-muted">&copy; 2023 Keyforge, Inc</p>
-      
+
                   <a href="./index.html"
                         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <img src="./images/logos/logo-no-background.svg" alt="Keyforge logo" height="35">
-      
+
                   </a>
-      
+
                   <ul class="nav col-md-4 justify-content-end">
                         <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
                         <li class="nav-item"><a href="./guides.html" class="nav-link px-2 text-muted">Guides</a></li>
                         <li class="nav-item"><a href="./store.html" class="nav-link px-2 text-muted">Store</a></li>
-                        <li class="nav-item"><a href="./customOrders.html" class="nav-link px-2 text-muted">Custom Order</a>
+                        <li class="nav-item"><a href="./customOrders.html" class="nav-link px-2 text-muted">Custom
+                                    Order</a>
                         </li>
                   </ul>
             </div>
-      
+
       </footer>
-     <!--Bundled bootstrap & popper-->
+      <!--Bundled bootstrap & popper-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>

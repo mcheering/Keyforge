@@ -10,3 +10,76 @@ body {
 .navbar {
       background-color: var(--black);
 }
+
+.learnMore {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+main,
+.container-fluid {
+      margin: auto;
+}
+
+.carousel-item {
+      height: 400px;
+      object-fit: center;
+}
+
+.about {
+      margin-top: 3rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+}
+
+.imageColumn {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+.card {
+      margin: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+      main {
+            width: 100%;
+      }
+
+      .learnMore {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+      }
+}
+
+@media only screen and (min-width: 1200px) {
+
+      main,
+      .container-fluid {
+            width: 75%;
+      }
+
+      .carousel-item img {
+            width: 100%;
+            object-fit: fill;
+      }
+}
+
+@media only screen and (min-width: 1600px) {
+
+      main,
+      .container-fluid {
+            width: 60%;
+      }
+
+      .carousel-item img {
+            width: 100%;
+            object-fit: fill;
+      }
+
+}
