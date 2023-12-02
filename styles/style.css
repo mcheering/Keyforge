@@ -5,6 +5,157 @@
 
 body {
       background-color: var(--gray);
+      margin-bottom: 200px;
+}
+
+footer {
+      background-color: var(--black);
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+}
+
+.media img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+}
+
+.modal-body img {
+      width: 100%;
+      object-fit: contain;
+}
+
+#servicesContent {
+      margin-bottom: 100px;
+
+}
+
+#keycapsContent,
+#buildContent,
+#lubingContent {
+      margin: 1rem auto;
+      width: 70%;
+}
+
+.media {
+      display: flex;
+      flex-direction: row;
+}
+
+#formWrapper,
+#orderSummary {
+      width: 90%;
+      margin: 3rem auto;
+      padding: 1rem;
+      border-radius: 5px;
+}
+
+#orderSummary {
+      color: whitesmoke
+}
+
+#change {
+      margin-bottom: 100px;
+}
+
+.form-check {
+      width: 95px;
+      margin: 1rem 0;
+}
+
+.quizContainer {
+      width: 80%;
+}
+
+.switchChoice {
+      height: 400px;
+      width: 75%;
+}
+
+.switchChoice img {
+      height: 300px;
+      object-fit: cover;
+}
+
+#changeSelection {
+      display: flex;
+      justify-content: center;
+}
+
+.button {
+      line-height: 50px;
+      height: 50px;
+      text-align: center;
+      width: 250px;
+      cursor: pointer;
+      color: #FFF;
+      transition: all 0.3s;
+      position: relative;
+      margin: 1rem auto;
+}
+
+.button span {
+      transition: all 0.3s;
+}
+
+.button::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: all 0.3s;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-top-color: rgba(255, 255, 255, 0.5);
+      border-bottom-color: rgba(255, 255, 255, 0.5);
+      transform: scale(0.1, 1);
+}
+
+.button:hover span {
+      letter-spacing: 2px;
+}
+
+.button:hover::before {
+      opacity: 1;
+      transform: scale(1, 1);
+}
+
+.button::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all 0.3s;
+      background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button:hover::after {
+      opacity: 0;
+      transform: scale(0.1, 1);
+}
+
+.keyboardSelection {
+      width: 90px;
+}
+
+#tofu,
+#tet,
+#odin {
+      margin: 1rem 2rem;
+}
+
+.hidden {
+      display: none;
 }
 
 .navbar {
@@ -24,7 +175,17 @@ main,
 
 .carousel-item {
       height: 400px;
-      object-fit: center;
+}
+
+.carousel-item img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+}
+
+.summary img {
+      height: 300px;
+      object-fit: cover;
 }
 
 .about {
@@ -45,6 +206,11 @@ main,
       margin: 1rem;
 }
 
+#learn {
+      margin-bottom: 300px;
+      ;
+}
+
 @media only screen and (min-width: 600px) {
       main {
             width: 100%;
@@ -55,6 +221,10 @@ main,
             display: flex;
             flex-direction: row;
       }
+
+      #formWrapper {
+            width: 70%;
+      }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -64,9 +234,8 @@ main,
             width: 75%;
       }
 
-      .carousel-item img {
-            width: 100%;
-            object-fit: fill;
+      #formWrapper {
+            width: 50%;
       }
 }
 
@@ -76,10 +245,4 @@ main,
       .container-fluid {
             width: 60%;
       }
-
-      .carousel-item img {
-            width: 100%;
-            object-fit: fill;
-      }
-
 }
